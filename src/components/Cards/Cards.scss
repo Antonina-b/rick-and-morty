@@ -1,0 +1,56 @@
+.cards {
+    max-width: 980px;
+    padding: 0 24px 32px 24px;
+
+    .card-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+        row-gap: 24px;
+
+        @media screen and (max-width: 360px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+            border-radius: 4px;
+            max-width: 300px;
+        }
+    
+        .card-image {
+            box-sizing: border-box;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 4px 4px 0 0;
+        }
+    }
+}
+
+.card-content {
+    margin: 12px 16px;
+
+    &-name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.15px;
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    &-species {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.25px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+}
